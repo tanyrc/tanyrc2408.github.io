@@ -1,0 +1,446 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+.header {
+  padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Download Button in Header */
+.download-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #4299e1, #3182ce); /* Blue gradient */
+  border-radius: 2rem; /* Fully rounded */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.download-button:hover {
+  opacity: 0.9; /* Slightly fade the button on hover */
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #718096;
+}
+
+.hero-description {
+  font-size: 1rem;
+  color: #a0aec0;
+}
+
+/* App Store Button */
+.app-store-button {
+  padding: 1rem 2rem; /* Larger padding for a bigger button */
+  font-size: 1.25rem; /* Larger font size */
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #4299e1, #3182ce); /* Blue gradient */
+  border-radius: 2rem; /* Fully rounded */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: inline-block; /* Ensure the button behaves like a block element */
+}
+
+.app-store-button:hover {
+  opacity: 0.9; /* Slightly fade the button on hover */
+}
+
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.app-screenshot {
+  height: 37.5rem;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 4rem 1.5rem;
+  background-color: #f7fafc;
+}
+
+.mission-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mission-subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4299e1;
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.feature-card {
+  text-align: center;
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.feature-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.feature-description {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 4rem 1.5rem;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote {
+  font-size: 1rem;
+  color: #1a202c;
+  margin-bottom: 1rem;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.testimonial-avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 4rem 1.5rem;
+  background-color: #f7fafc;
+}
+
+.pricing-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pricing-content {
+  display: flex;
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.pricing-description {
+  flex: 1;
+}
+
+.pricing-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4299e1;
+}
+
+.pricing-text {
+  font-size: 1rem;
+  color: #718096;
+  margin-top: 0.5rem;
+}
+
+.pricing-card {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card-header {
+  text-align: center;
+}
+
+.pricing-plan {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #1a202c;
+}
+
+.pricing-amount {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin: 0.5rem 0;
+}
+
+.pricing-duration {
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.pricing-features {
+  margin: 1.5rem 0;
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.pricing-feature {
+  margin-bottom: 0.75rem;
+  color: #1a202c;
+  font-size: 0.875rem;
+}
+
+.pricing-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #4299e1, #3182ce); /* Blue gradient */
+  border-radius: 2rem; /* Fully rounded */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pricing-button:hover {
+  opacity: 0.9; /* Slightly fade the button on hover */
+}
+
+.pricing-note {
+  font-size: 0.75rem;
+  color: #718096;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 4rem 1.5rem;
+  background-color: #4299e1;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4299e1;
+  background: linear-gradient(90deg, #fff, #f7fafc); /* White gradient */
+  border-radius: 2rem; /* Fully rounded */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.9; /* Slightly fade the button on hover */
+}
+
+/* Footer */
+.footer {
+  padding: 2rem 1.5rem;
+  background-color: #f7fafc;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-nav a {
+  font-size: 0.875rem;
+  color: #1a202c;
+  text-decoration: none;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  color: #718096;
+  margin-bottom: 1rem;
+}
+
+.app-store-footer {
+  height: 2.625rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.newsletter {
+  margin-top: 1.5rem;
+}
+
+.newsletter-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-email {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.375rem;
+}
+
+.newsletter-button {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(90deg, #4299e1, #3182ce); /* Blue gradient */
+  border-radius: 2rem; /* Fully rounded */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-button:hover {
+  opacity: 0.9; /* Slightly fade the button on hover */
+}
